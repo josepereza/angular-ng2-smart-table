@@ -9,6 +9,18 @@ export class AppComponent {
 
 
   settings = {
+     mode: 'internal', //para usar la funcion borrar() debemos poner  mode:'external'
+    selectMode: 'single', // single|multi
+    hideHeader: false,
+    hideSubHeader: false,
+    actions: {
+      columnTitle: 'Actions',
+      add: true,
+      edit: true,
+      delete: true,
+      custom: [],
+      position: 'left', // left|right
+    },
     pager:{
       perPage:5
     },
@@ -131,4 +143,6 @@ export class AppComponent {
     console.log("Edit Event In Console")
     console.log(event);
   }
+  borrar(event){
+    console.log(event)
 }
