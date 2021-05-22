@@ -146,3 +146,4 @@ export class AppComponent {
   borrar(event){
     console.log(event)
 }
+}
